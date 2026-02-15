@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int balance;
+	printf("enter balance: ");
+	scanf("%d", &balance);
+	if(balance>0)
+		printf("positive balance");
+		else if(balance<0) 
+		printf("overdrawn");
+		else if("balance==0")
+		printf("zero balance");
+	
+}
