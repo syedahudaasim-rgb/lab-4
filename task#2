@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int data;
+	printf("enter data in GB: ");
+	scanf("%d", &data);
+	if(data<=50)
+		printf("basic user");
+		else if(data>51&&data<150) 
+		printf("standard user");
+		else
+		printf("heavy user");
+	
+}
