@@ -1,0 +1,101 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int choice;
+    float a, b, result;
+
+    printf("SCIENTIFIC CALCULATOR\n");
+    printf("1. Addition\n");
+    printf("2. Subtraction\n");
+    printf("3. Multiplication\n");
+    printf("4. Division\n");
+    printf("5. Square\n");
+    printf("6. Cube\n");
+    printf("7. Square Root\n");
+    printf("8. Power (x^y)\n");
+    printf("9. Absolute Value\n");
+
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+
+        case 1:
+            printf("Enter two numbers: ");
+            scanf("%f %f", &a, &b);
+            result = a + b;
+            printf("Result = %.2f", result);
+            break;
+
+        case 2:
+            printf("Enter two numbers: ");
+            scanf("%f %f", &a, &b);
+            result = a - b;
+            printf("Result = %.2f", result);
+            break;
+
+        case 3:
+            printf("Enter two numbers: ");
+            scanf("%f %f", &a, &b);
+            result = a * b;
+            printf("Result = %.2f", result);
+            break;
+
+        case 4:
+            printf("Enter two numbers: ");
+            scanf("%f %f", &a, &b);
+            if (b != 0) {
+                result = a / b;
+                printf("Result = %.2f", result);
+            } else {
+                printf("Error: Division by zero not allowed");
+            }
+            break;
+
+        case 5:
+            printf("Enter a number: ");
+            scanf("%f", &a);
+            result = a * a;
+            printf("Square = %.2f", result);
+            break;
+
+        case 6:
+            printf("Enter a number: ");
+            scanf("%f", &a);
+            result = a * a * a;
+            printf("Cube = %.2f", result);
+            break;
+
+        case 7:
+            printf("Enter a number: ");
+            scanf("%f", &a);
+            if (a >= 0) {
+                result = sqrt(a);
+                printf("Square Root = %.2f", result);
+            } else {
+                printf("Error: Square root of negative number not allowed");
+            }
+            break;
+
+        case 8:
+            printf("Enter base and exponent: ");
+            scanf("%f %f", &a, &b);
+            result = pow(a, b);
+            printf("Result = %.2f", result);
+            break;
+
+        case 9:
+            printf("Enter a number: ");
+            scanf("%f", &a);
+            result = fabs(a);
+            printf("Absolute Value = %.2f", result);
+            break;
+
+        default:
+            printf("Invalid Choice");
+    }
+
+    return 0;
+}
+
