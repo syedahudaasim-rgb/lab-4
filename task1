@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int atn;
+	printf("enter attendance: ");
+	scanf("%d", &atn);
+	if(atn>=75)
+		printf("selected");
+		else 
+		printf("not selected");
+	
+}
